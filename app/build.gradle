@@ -19,8 +19,8 @@ android {
     defaultConfig {
         minSdkVersion 24
         targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        versionCode 101
+        versionName "1.0.1"
         //   applicationId "news.dvlp.app_imTask"// 这里只是组件appid,主项目id在App组件中配置
 
         testInstrumentationRunner "android.support.im_task_test.runner.AndroidJUnitRunner"

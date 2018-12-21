@@ -8,6 +8,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.Keep;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.taobao.sophix.PatchStatus;
 import com.taobao.sophix.SophixApplication;
@@ -50,6 +51,8 @@ public class SophixStubApplication extends SophixApplication {
             appVersion = this.getPackageManager()
                     .getPackageInfo(this.getPackageName(), 0)
                     .versionName;
+            Toast.makeText(this,"version=="+appVersion,Toast.LENGTH_LONG).show();
+
         } catch (Exception e) {
         }
         final SophixManager instance = SophixManager.getInstance();

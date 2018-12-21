@@ -16,7 +16,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void checkPatch(View view) {
-//        Toast.makeText(MainActivity.this,"热更新",Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this,"热更新",Toast.LENGTH_SHORT).show();
+        StoragePermissions.verifyStoragePermissions(this);
         SophixManager.getInstance().queryAndLoadNewPatch();//检查热更新入口方法
     }
 
